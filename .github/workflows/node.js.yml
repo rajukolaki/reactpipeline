@@ -33,7 +33,7 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
-        token: ${{ 2253a3d9-1cc1-4003-bea8-a8b627c6770f }}
+        token: ${{ secrets.CODECOV_TOKEN }}
     - name: Build
       run: npm run build
     - name: Deploy
